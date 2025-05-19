@@ -1,0 +1,667 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tax Services | TaxPro Solutions</title>
+    <link href="./output.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body class="bg-gray-50 font-sans">
+    <!-- Glass Morphism Navbar -->
+    <nav class="backdrop-blur-md bg-white/80 shadow-sm fixed w-full z-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between h-20 items-center">
+                <!-- Logo -->
+                <div class="flex-shrink-0 flex items-center">
+                    <span class="text-gray-900 text-2xl font-bold tracking-wider">TaxPro<span class="font-light">Solutions</span></span>
+                </div>
+                
+                <!-- Desktop Menu -->
+                <div class="hidden md:block">
+                    <div class="ml-10 flex items-center space-x-8">
+                        <a href="index.html" class="text-gray-700 hover:text-amber-600 px-3 py-2 rounded-md text-sm font-medium transition duration-300">Home</a>
+                        <a href="services.html" class="text-gray-900 px-3 py-2 rounded-md text-sm font-medium bg-amber-100 bg-opacity-50">Services</a>
+                        <a href="resources.html" class="text-gray-700 hover:text-amber-600 px-3 py-2 rounded-md text-sm font-medium transition duration-300">Resources</a>
+                        <a href="privacypolicy.html" class="text-gray-700 hover:text-amber-600 px-3 py-2 rounded-md text-sm font-medium transition duration-300">Privacy Policy</a>
+                        <div class="relative group">
+                            <button class="text-gray-700 hover:text-amber-600 px-3 py-2 rounded-md text-sm font-medium focus:outline-none transition duration-300 flex items-center">
+                                More <i class="fas fa-chevron-down text-xs ml-1 transition-transform duration-300 group-hover:rotate-180"></i>
+                            </button>
+                            <div class="absolute left-0 mt-2 w-48 rounded-md shadow-lg bg-white py-1 hidden group-hover:block z-50 border border-gray-200">
+                                <a href="#" class="block px-4 py-2 text-sm text-gray-700 hover:bg-amber-50 transition duration-150">Tax Calculators</a>
+                                <a href="#" class="block px-4 py-2 text-sm text-gray-700 hover:bg-amber-50 transition duration-150">Blog</a>
+                                <a href="#" class="block px-4 py-2 text-sm text-gray-700 hover:bg-amber-50 transition duration-150">FAQs</a>
+                            </div>
+                        </div>
+                        <a href="#" class="ml-4 px-4 py-2 border border-transparent rounded-md shadow-sm text-sm font-medium text-white bg-gradient-to-r from-amber-500 to-amber-600 hover:from-amber-600 hover:to-amber-700 transition duration-300 transform hover:scale-105">
+                            Contact Us
+                        </a>
+                    </div>
+                </div>
+                
+                <!-- Mobile menu button -->
+                <div class="md:hidden flex items-center">
+                    <button id="mobile-menu-button" class="text-gray-700 hover:text-gray-900 focus:outline-none">
+                        <i class="fas fa-bars text-2xl"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Mobile Menu -->
+        <div id="mobile-menu" class="md:hidden hidden bg-white shadow-lg">
+            <div class="px-2 pt-2 pb-3 space-y-1 sm:px-3">
+                <a href="index.html" class="block px-3 py-2 rounded-md text-base font-medium text-gray-700 hover:bg-amber-50">Home</a>
+                <a href="services.html" class="block px-3 py-2 rounded-md text-base font-medium text-gray-900 bg-amber-100">Services</a>
+                <a href="resources.html" class="block px-3 py-2 rounded-md text-base font-medium text-gray-700 hover:bg-amber-50">Resources</a>
+                <a href="#" class="block px-3 py-2 rounded-md text-base font-medium text-gray-700 hover:bg-amber-50">Tax Calculators</a>
+                <a href="#" class="block px-3 py-2 rounded-md text-base font-medium text-gray-700 hover:bg-amber-50">Blog</a>
+                <a href="#" class="block px-3 py-2 rounded-md text-base font-medium text-gray-700 hover:bg-amber-50">FAQs</a>
+                <a href="#" class="block px-3 py-2 rounded-md text-base font-medium text-white bg-amber-600 hover:bg-amber-700 text-center mt-2">
+                    Contact Us
+                </a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Page Content (with padding for fixed navbar) -->
+    <div class="pt-20">
+        <!-- Hero Section -->
+        <div class="relative bg-gradient-to-br from-gray-900 to-gray-800 overflow-hidden">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16 md:py-24">
+                <div class="relative z-10 text-center">
+                    <h1 class="text-4xl md:text-5xl font-extrabold tracking-tight text-white">
+                        Our Tax Services
+                    </h1>
+                    <p class="mt-4 max-w-3xl mx-auto text-lg text-gray-300">
+                        Comprehensive tax solutions tailored to your unique financial situation and goals.
+                    </p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Advertisement Banner -->
+        <div class="bg-gray-200 py-4 px-4 text-center border-y border-gray-300">
+            <div class="max-w-7xl mx-auto">
+                <p class="text-sm text-gray-600">Advertisement Space</p>
+                <div class="mt-2 h-24 bg-white flex items-center justify-center border border-gray-300 rounded-lg">
+                    <p class="text-gray-500">Your Advertisement Here</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Services Grid -->
+        <div class="py-12 bg-white">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="lg:text-center">
+                    <h2 class="text-base text-amber-600 font-semibold tracking-wide uppercase">What We Offer</h2>
+                    <p class="mt-2 text-3xl leading-8 font-extrabold tracking-tight text-gray-900 sm:text-4xl">
+                        Expert Tax Services
+                    </p>
+                    <p class="mt-4 max-w-2xl text-xl text-gray-500 lg:mx-auto">
+                        From individual tax returns to complex corporate tax planning, we have the expertise to handle all your tax needs.
+                    </p>
+                </div>
+
+                <div class="mt-12">
+                    <div class="space-y-10 md:space-y-0 md:grid md:grid-cols-2 md:gap-8">
+                        <!-- Service 1 -->
+                        <div class="relative group overflow-hidden rounded-lg shadow-md hover:shadow-xl transition duration-300">
+                            <div class="absolute inset-0 bg-gradient-to-br from-amber-400 to-amber-600 opacity-0 group-hover:opacity-100 transition duration-500"></div>
+                            <div class="relative bg-white p-6 h-full">
+                                <div class="flex items-center justify-center h-12 w-12 rounded-md bg-amber-500 text-white">
+                                    <i class="fas fa-user-tie text-xl"></i>
+                                </div>
+                                <h3 class="mt-5 text-lg leading-6 font-medium text-gray-900">Individual Tax Services</h3>
+                                <p class="mt-2 text-base text-gray-500">
+                                    Comprehensive tax preparation and planning for individuals, ensuring you take advantage of all available deductions and credits.
+                                </p>
+                                <ul class="mt-4 space-y-2 text-sm text-gray-600">
+                                    <li class="flex items-start">
+                                        <i class="fas fa-check text-amber-500 mt-1 mr-2"></i>
+                                        <span>Personal income tax preparation</span>
+                                    </li>
+                                    <li class="flex items-start">
+                                        <i class="fas fa-check text-amber-500 mt-1 mr-2"></i>
+                                        <span>Tax planning strategies</span>
+                                    </li>
+                                    <li class="flex items-start">
+                                        <i class="fas fa-check text-amber-500 mt-1 mr-2"></i>
+                                        <span>Retirement tax planning</span>
+                                    </li>
+                                    <li class="flex items-start">
+                                        <i class="fas fa-check text-amber-500 mt-1 mr-2"></i>
+                                        <span>Investment tax planning</span>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+
+                        <!-- Service 2 -->
+                        <div class="relative group overflow-hidden rounded-lg shadow-md hover:shadow-xl transition duration-300">
+                            <div class="absolute inset-0 bg-gradient-to-br from-teal-400 to-teal-600 opacity-0 group-hover:opacity-100 transition duration-500"></div>
+                            <div class="relative bg-white p-6 h-full">
+                                <div class="flex items-center justify-center h-12 w-12 rounded-md bg-teal-500 text-white">
+                                    <i class="fas fa-briefcase text-xl"></i>
+                                </div>
+                                <h3 class="mt-5 text-lg leading-6 font-medium text-gray-900">Business Tax Services</h3>
+                                <p class="mt-2 text-base text-gray-500">
+                                    Tailored tax solutions for businesses of all sizes, from sole proprietorships to large corporations.
+                                </p>
+                                <ul class="mt-4 space-y-2 text-sm text-gray-600">
+                                    <li class="flex items-start">
+                                        <i class="fas fa-check text-teal-500 mt-1 mr-2"></i>
+                                        <span>Corporate tax preparation</span>
+                                    </li>
+                                    <li class="flex items-start">
+                                        <i class="fas fa-check text-teal-500 mt-1 mr-2"></i>
+                                        <span>Business tax planning</span>
+                                    </li>
+                                    <li class="flex items-start">
+                                        <i class="fas fa-check text-teal-500 mt-1 mr-2"></i>
+                                        <span>Payroll tax services</span>
+                                    </li>
+                                    <li class="flex items-start">
+                                        <i class="fas fa-check text-teal-500 mt-1 mr-2"></i>
+                                        <span>Sales tax compliance</span>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+
+                        <!-- Service 3 -->
+                        <div class="relative group overflow-hidden rounded-lg shadow-md hover:shadow-xl transition duration-300">
+                            <div class="absolute inset-0 bg-gradient-to-br from-amber-400 to-amber-600 opacity-0 group-hover:opacity-100 transition duration-500"></div>
+                            <div class="relative bg-white p-6 h-full">
+                                <div class="flex items-center justify-center h-12 w-12 rounded-md bg-amber-500 text-white">
+                                    <i class="fas fa-landmark text-xl"></i>
+                                </div>
+                                <h3 class="mt-5 text-lg leading-6 font-medium text-gray-900">IRS Representation</h3>
+                                <p class="mt-2 text-base text-gray-500">
+                                    Expert representation before the IRS for audits, appeals, collections, and other tax matters.
+                                </p>
+                                <ul class="mt-4 space-y-2 text-sm text-gray-600">
+                                    <li class="flex items-start">
+                                        <i class="fas fa-check text-amber-500 mt-1 mr-2"></i>
+                                        <span>Audit representation</span>
+                                    </li>
+                                    <li class="flex items-start">
+                                        <i class="fas fa-check text-amber-500 mt-1 mr-2"></i>
+                                        <span>Offer in compromise</span>
+                                    </li>
+                                    <li class="flex items-start">
+                                        <i class="fas fa-check text-amber-500 mt-1 mr-2"></i>
+                                        <span>Penalty abatement</span>
+                                    </li>
+                                    <li class="flex items-start">
+                                        <i class="fas fa-check text-amber-500 mt-1 mr-2"></i>
+                                        <span>Tax debt resolution</span>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+
+                        <!-- Service 4 -->
+                        <div class="relative group overflow-hidden rounded-lg shadow-md hover:shadow-xl transition duration-300">
+                            <div class="absolute inset-0 bg-gradient-to-br from-teal-400 to-teal-600 opacity-0 group-hover:opacity-100 transition duration-500"></div>
+                            <div class="relative bg-white p-6 h-full">
+                                <div class="flex items-center justify-center h-12 w-12 rounded-md bg-teal-500 text-white">
+                                    <i class="fas fa-globe-americas text-xl"></i>
+                                </div>
+                                <h3 class="mt-5 text-lg leading-6 font-medium text-gray-900">International Tax Services</h3>
+                                <p class="mt-2 text-base text-gray-500">
+                                    Specialized services for clients with international tax obligations, including expatriates and multinational businesses.
+                                </p>
+                                <ul class="mt-4 space-y-2 text-sm text-gray-600">
+                                    <li class="flex items-start">
+                                        <i class="fas fa-check text-teal-500 mt-1 mr-2"></i>
+                                        <span>Expatriate tax services</span>
+                                    </li>
+                                    <li class="flex items-start">
+                                        <i class="fas fa-check text-teal-500 mt-1 mr-2"></i>
+                                        <span>Foreign bank account reporting</span>
+                                    </li>
+                                    <li class="flex items-start">
+                                        <i class="fas fa-check text-teal-500 mt-1 mr-2"></i>
+                                        <span>Transfer pricing</span>
+                                    </li>
+                                    <li class="flex items-start">
+                                        <i class="fas fa-check text-teal-500 mt-1 mr-2"></i>
+                                        <span>Tax treaty analysis</span>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Pricing Section -->
+        <div class="bg-gray-50 py-12">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="lg:text-center">
+                    <h2 class="text-base text-amber-600 font-semibold tracking-wide uppercase">Pricing</h2>
+                    <p class="mt-2 text-3xl leading-8 font-extrabold tracking-tight text-gray-900 sm:text-4xl">
+                        Transparent Pricing
+                    </p>
+                    <p class="mt-4 max-w-2xl text-xl text-gray-500 lg:mx-auto">
+                        We offer competitive pricing with no hidden fees. Contact us for a custom quote based on your specific needs.
+                    </p>
+                </div>
+
+                <div class="mt-16 space-y-12 lg:space-y-0 lg:grid lg:grid-cols-3 lg:gap-x-8">
+                    <!-- Tier 1 -->
+                    <div class="relative group bg-white p-8 rounded-xl shadow-md hover:shadow-lg transition duration-300 border border-gray-200 hover:border-amber-300">
+                        <div class="absolute -inset-1 bg-gradient-to-r from-amber-400 to-amber-600 rounded-lg blur opacity-0 group-hover:opacity-25 transition duration-500"></div>
+                        <div class="relative">
+                            <h3 class="text-lg font-medium text-gray-900">Basic</h3>
+                            <p class="mt-4 text-sm text-gray-500">
+                                For simple tax situations with W-2 income and basic deductions.
+                            </p>
+                            <div class="mt-6">
+                                <span class="text-4xl font-extrabold text-gray-900">$150</span>
+                                <span class="text-base font-medium text-gray-500">/filing</span>
+                            </div>
+                            <ul class="mt-6 space-y-4">
+                                <li class="flex items-start">
+                                    <i class="fas fa-check text-amber-500 mt-1 mr-3"></i>
+                                    <span class="text-base text-gray-700">W-2 Income</span>
+                                </li>
+                                <li class="flex items-start">
+                                    <i class="fas fa-check text-amber-500 mt-1 mr-3"></i>
+                                    <span class="text-base text-gray-700">Standard Deduction</span>
+                                </li>
+                                <li class="flex items-start">
+                                    <i class="fas fa-check text-amber-500 mt-1 mr-3"></i>
+                                    <span class="text-base text-gray-700">Student Loan Interest</span>
+                                </li>
+                                <li class="flex items-start">
+                                    <i class="fas fa-check text-amber-500 mt-1 mr-3"></i>
+                                    <span class="text-base text-gray-700">Basic Credits</span>
+                                </li>
+                            </ul>
+                            <a href="#" class="mt-8 block w-full py-3 px-6 border border-transparent rounded-md text-center font-medium text-white bg-gradient-to-r from-amber-500 to-amber-600 hover:from-amber-600 hover:to-amber-700 transition duration-300">
+                                Choose Basic
+                            </a>
+                        </div>
+                    </div>
+
+                    <!-- Tier 2 -->
+                    <div class="relative group bg-white p-8 rounded-xl shadow-lg hover:shadow-xl transition duration-300 border-2 border-amber-400">
+                        <div class="absolute -inset-1 bg-gradient-to-r from-amber-400 to-amber-600 rounded-lg blur opacity-25"></div>
+                        <div class="relative">
+                            <div class="absolute top-0 right-0 -mt-4 -mr-4 bg-amber-500 text-white text-xs font-bold px-3 py-1 rounded-full">
+                                Most Popular
+                            </div>
+                            <h3 class="text-lg font-medium text-gray-900">Standard</h3>
+                            <p class="mt-4 text-sm text-gray-500">
+                                For more complex situations with investments, home ownership, or business income.
+                            </p>
+                            <div class="mt-6">
+                                <span class="text-4xl font-extrabold text-gray-900">$300</span>
+                                <span class="text-base font-medium text-gray-500">/filing</span>
+                            </div>
+                            <ul class="mt-6 space-y-4">
+                                <li class="flex items-start">
+                                    <i class="fas fa-check text-amber-500 mt-1 mr-3"></i>
+                                    <span class="text-base text-gray-700">Everything in Basic</span>
+                                </li>
+                                <li class="flex items-start">
+                                    <i class="fas fa-check text-amber-500 mt-1 mr-3"></i>
+                                    <span class="text-base text-gray-700">Itemized Deductions</span>
+                                </li>
+                                <li class="flex items-start">
+                                    <i class="fas fa-check text-amber-500 mt-1 mr-3"></i>
+                                    <span class="text-base text-gray-700">Investment Income</span>
+                                </li>
+                                <li class="flex items-start">
+                                    <i class="fas fa-check text-amber-500 mt-1 mr-3"></i>
+                                    <span class="text-base text-gray-700">Rental Property</span>
+                                </li>
+                                <li class="flex items-start">
+                                    <i class="fas fa-check text-amber-500 mt-1 mr-3"></i>
+                                    <span class="text-base text-gray-700">Small Business (Schedule C)</span>
+                                </li>
+                            </ul>
+                            <a href="#" class="mt-8 block w-full py-3 px-6 border border-transparent rounded-md text-center font-medium text-white bg-gradient-to-r from-amber-500 to-amber-600 hover:from-amber-600 hover:to-amber-700 transition duration-300 transform hover:scale-105">
+                                Choose Standard
+                            </a>
+                        </div>
+                    </div>
+
+                    <!-- Tier 3 -->
+                    <div class="relative group bg-white p-8 rounded-xl shadow-md hover:shadow-lg transition duration-300 border border-gray-200 hover:border-teal-300">
+                        <div class="absolute -inset-1 bg-gradient-to-r from-teal-400 to-teal-600 rounded-lg blur opacity-0 group-hover:opacity-25 transition duration-500"></div>
+                        <div class="relative">
+                            <h3 class="text-lg font-medium text-gray-900">Premium</h3>
+                            <p class="mt-4 text-sm text-gray-500">
+                                For complex tax situations with multiple income sources, businesses, or special circumstances.
+                            </p>
+                            <div class="mt-6">
+                                <span class="text-4xl font-extrabold text-gray-900">$600+</span>
+                                <span class="text-base font-medium text-gray-500">/filing</span>
+                            </div>
+                            <ul class="mt-6 space-y-4">
+                                <li class="flex items-start">
+                                    <i class="fas fa-check text-teal-500 mt-1 mr-3"></i>
+                                    <span class="text-base text-gray-700">Everything in Standard</span>
+                                </li>
+                                <li class="flex items-start">
+                                    <i class="fas fa-check text-teal-500 mt-1 mr-3"></i>
+                                    <span class="text-base text-gray-700">Multiple Businesses</span>
+                                </li>
+                                <li class="flex items-start">
+                                    <i class="fas fa-check text-teal-500 mt-1 mr-3"></i>
+                                    <span class="text-base text-gray-700">Partnerships & S-Corps</span>
+                                </li>
+                                <li class="flex items-start">
+                                    <i class="fas fa-check text-teal-500 mt-1 mr-3"></i>
+                                    <span class="text-base text-gray-700">Trust & Estate Returns</span>
+                                </li>
+                                <li class="flex items-start">
+                                    <i class="fas fa-check text-teal-500 mt-1 mr-3"></i>
+                                    <span class="text-base text-gray-700">International Tax Issues</span>
+                                </li>
+                            </ul>
+                            <a href="#" class="mt-8 block w-full py-3 px-6 border border-transparent rounded-md text-center font-medium text-white bg-gradient-to-r from-teal-500 to-teal-600 hover:from-teal-600 hover:to-teal-700 transition duration-300">
+                                Get Custom Quote
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Advertisement Banner -->
+        <div class="bg-gray-200 py-4 px-4 text-center border-y border-gray-300">
+            <div class="max-w-7xl mx-auto">
+                <p class="text-sm text-gray-600">Advertisement Space</p>
+                <div class="mt-2 h-24 bg-white flex items-center justify-center border border-gray-300 rounded-lg">
+                    <p class="text-gray-500">Your Advertisement Here</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- FAQ Section -->
+        <div class="bg-white py-12">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="lg:text-center">
+                    <h2 class="text-base text-amber-600 font-semibold tracking-wide uppercase">Questions</h2>
+                    <p class="mt-2 text-3xl leading-8 font-extrabold tracking-tight text-gray-900 sm:text-4xl">
+                        Frequently Asked Questions
+                    </p>
+                    <p class="mt-4 max-w-2xl text-xl text-gray-500 lg:mx-auto">
+                        Here are some common questions about our tax services.
+                    </p>
+                </div>
+
+                <div class="mt-12">
+                    <div class="space-y-6 max-w-3xl mx-auto">
+                        <!-- FAQ Item 1 -->
+                        <div class="group rounded-lg bg-gray-50 p-6 transition duration-300 hover:bg-white hover:shadow-md">
+                            <button class="flex w-full items-center justify-between text-left focus:outline-none">
+                                <span class="text-lg font-medium text-gray-900 group-hover:text-amber-600 transition duration-300">
+                                    What documents do I need to provide for tax preparation?
+                                </span>
+                                <i class="fas fa-chevron-down text-amber-500 transition-transform duration-300 group-focus:rotate-180"></i>
+                            </button>
+                            <div class="mt-4 text-gray-600">
+                                <p>
+                                    The documents you need depend on your specific tax situation, but generally include W-2s, 1099s, records of deductible expenses, mortgage interest statements, charitable contribution records, and documentation for any credits you plan to claim. We provide a customized checklist after our initial consultation.
+                                </p>
+                            </div>
+                        </div>
+
+                        <!-- FAQ Item 2 -->
+                        <div class="group rounded-lg bg-gray-50 p-6 transition duration-300 hover:bg-white hover:shadow-md">
+                            <button class="flex w-full items-center justify-between text-left focus:outline-none">
+                                <span class="text-lg font-medium text-gray-900 group-hover:text-amber-600 transition duration-300">
+                                    How long does the tax preparation process take?
+                                </span>
+                                <i class="fas fa-chevron-down text-amber-500 transition-transform duration-300 group-focus:rotate-180"></i>
+                            </button>
+                            <div class="mt-4 text-gray-600">
+                                <p>
+                                    For most individual returns with all documents provided, we can complete preparation within 1-2 weeks. During peak tax season (February-April), processing may take 2-3 weeks. Complex business returns or returns requiring additional research may take longer. We offer expedited services for an additional fee.
+                                </p>
+                            </div>
+                        </div>
+
+                        <!-- FAQ Item 3 -->
+                        <div class="group rounded-lg bg-gray-50 p-6 transition duration-300 hover:bg-white hover:shadow-md">
+                            <button class="flex w-full items-center justify-between text-left focus:outline-none">
+                                <span class="text-lg font-medium text-gray-900 group-hover:text-amber-600 transition duration-300">
+                                    What's the difference between tax preparation and tax planning?
+                                </span>
+                                <i class="fas fa-chevron-down text-amber-500 transition-transform duration-300 group-focus:rotate-180"></i>
+                            </button>
+                            <div class="mt-4 text-gray-600">
+                                <p>
+                                    Tax preparation is the process of compiling and filing your tax return for the previous year. Tax planning is proactive strategizing throughout the year to optimize your tax position for the current and future years. While preparation looks backward, planning looks forward to help you make tax-smart financial decisions.
+                                </p>
+                            </div>
+                        </div>
+
+                        <!-- FAQ Item 4 -->
+                        <div class="group rounded-lg bg-gray-50 p-6 transition duration-300 hover:bg-white hover:shadow-md">
+                            <button class="flex w-full items-center justify-between text-left focus:outline-none">
+                                <span class="text-lg font-medium text-gray-900 group-hover:text-amber-600 transition duration-300">
+                                    Do you offer audit protection or assistance?
+                                </span>
+                                <i class="fas fa-chevron-down text-amber-500 transition-transform duration-300 group-focus:rotate-180"></i>
+                            </button>
+                            <div class="mt-4 text-gray-600">
+                                <p>
+                                    Yes, we offer several levels of audit protection. Our basic service includes consultation and guidance if you're audited. Our premium protection plans include full representation before the IRS or state tax authorities. We stand behind our work and will assist with any questions or audits related to returns we prepare.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- CTA Section -->
+        <div class="bg-gray-900">
+            <div class="max-w-7xl mx-auto py-12 px-4 sm:py-16 sm:px-6 lg:px-8 lg:py-20">
+                <div class="lg:grid lg:grid-cols-2 lg:gap-8 lg:items-center">
+                    <div>
+                        <h2 class="text-3xl font-extrabold tracking-tight text-white sm:text-4xl">
+                            Ready to get started?
+                        </h2>
+                        <p class="mt-3 max-w-3xl text-lg text-gray-300">
+                            Contact us today to schedule a consultation and learn how we can help optimize your tax situation.
+                        </p>
+                    </div>
+                    <div class="mt-8 lg:mt-0">
+                        <div class="inline-flex rounded-md shadow">
+                            <a href="#" class="inline-flex items-center justify-center px-5 py-3 border border-transparent text-base font-medium rounded-md text-amber-700 bg-amber-400 hover:bg-amber-300 transition duration-300 transform hover:scale-105">
+                                Schedule Consultation
+                            </a>
+                        </div>
+                        <div class="ml-3 inline-flex rounded-md shadow">
+                            <a href="#" class="inline-flex items-center justify-center px-5 py-3 border border-transparent text-base font-medium rounded-md text-white bg-gray-800 hover:bg-gray-700 transition duration-300">
+                                Learn more
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Footer -->
+        <footer class="bg-gray-800">
+            <div class="max-w-7xl mx-auto py-12 px-4 sm:px-6 lg:py-16 lg:px-8">
+                <div class="xl:grid xl:grid-cols-3 xl:gap-8">
+                    <div class="space-y-8 xl:col-span-1">
+                        <span class="text-white text-2xl font-bold tracking-wider">TaxPro<span class="font-light">Solutions</span></span>
+                        <p class="text-gray-300 text-base">
+                            Expert tax planning and filing services to help you navigate complex tax laws and maximize your financial position.
+                        </p>
+                        <div class="flex space-x-6">
+                            <a href="#" class="text-gray-400 hover:text-white transition duration-300">
+                                <i class="fab fa-facebook-f"></i>
+                            </a>
+                            <a href="#" class="text-gray-400 hover:text-white transition duration-300">
+                                <i class="fab fa-twitter"></i>
+                            </a>
+                            <a href="#" class="text-gray-400 hover:text-white transition duration-300">
+                                <i class="fab fa-linkedin-in"></i>
+                            </a>
+                            <a href="#" class="text-gray-400 hover:text-white transition duration-300">
+                                <i class="fab fa-instagram"></i>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="mt-12 grid grid-cols-2 gap-8 xl:mt-0 xl:col-span-2">
+                        <div class="md:grid md:grid-cols-2 md:gap-8">
+                            <div>
+                                <h3 class="text-sm font-semibold text-gray-300 tracking-wider uppercase">
+                                    Services
+                                </h3>
+                                <ul class="mt-4 space-y-4">
+                                    <li>
+                                        <a href="#" class="text-base text-gray-400 hover:text-white transition duration-300">
+                                            Tax Planning
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#" class="text-base text-gray-400 hover:text-white transition duration-300">
+                                            Tax Preparation
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#" class="text-base text-gray-400 hover:text-white transition duration-300">
+                                            IRS Representation
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#" class="text-base text-gray-400 hover:text-white transition duration-300">
+                                            Business Tax Services
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="mt-12 md:mt-0">
+                                <h3 class="text-sm font-semibold text-gray-300 tracking-wider uppercase">
+                                    Resources
+                                </h3>
+                                <ul class="mt-4 space-y-4">
+                                    <li>
+                                        <a href="#" class="text-base text-gray-400 hover:text-white transition duration-300">
+                                            Tax Calculators
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#" class="text-base text-gray-400 hover:text-white transition duration-300">
+                                            Blog
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#" class="text-base text-gray-400 hover:text-white transition duration-300">
+                                            FAQs
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#" class="text-base text-gray-400 hover:text-white transition duration-300">
+                                            Glossary
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="md:grid md:grid-cols-2 md:gap-8">
+                            <div>
+                                <h3 class="text-sm font-semibold text-gray-300 tracking-wider uppercase">
+                                    Company
+                                </h3>
+                                <ul class="mt-4 space-y-4">
+                                    <li>
+                                        <a href="#" class="text-base text-gray-400 hover:text-white transition duration-300">
+                                            About Us
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#" class="text-base text-gray-400 hover:text-white transition duration-300">
+                                            Careers
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="privacypolicy.html" class="text-base text-gray-400 hover:text-white transition duration-300">
+                                            Privacy Policy
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#" class="text-base text-gray-400 hover:text-white transition duration-300">
+                                            Terms of Service
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="mt-12 md:mt-0">
+                                <h3 class="text-sm font-semibold text-gray-300 tracking-wider uppercase">
+                                    Contact
+                                </h3>
+                                <ul class="mt-4 space-y-4">
+                                    <li>
+                                        <a href="#" class="text-base text-gray-400 hover:text-white transition duration-300">
+                                            Support
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#" class="text-base text-gray-400 hover:text-white transition duration-300">
+                                            Locations
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#" class="text-base text-gray-400 hover:text-white transition duration-300">
+                                            Newsletter
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#" class="text-base text-gray-400 hover:text-white transition duration-300">
+                                            Press
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="mt-12 border-t border-gray-700 pt-8">
+                    <p class="text-base text-gray-400 text-center">
+                        &copy; 2023 TaxPro Solutions. All rights reserved.
+                    </p>
+                </div>
+            </div>
+        </footer>
+    </div>
+
+    <script>
+        // Mobile menu toggle
+        document.getElementById('mobile-menu-button').addEventListener('click', function() {
+            const menu = document.getElementById('mobile-menu');
+            menu.classList.toggle('hidden');
+        });
+
+        // FAQ accordion functionality
+        document.querySelectorAll('.group button').forEach(button => {
+            button.addEventListener('click', () => {
+                const content = button.nextElementSibling;
+                const icon = button.querySelector('i');
+                
+                // Toggle content visibility
+                if (content.style.maxHeight) {
+                    content.style.maxHeight = null;
+                    icon.classList.remove('rotate-180');
+                } else {
+                    content.style.maxHeight = content.scrollHeight + 'px';
+                    icon.classList.add('rotate-180');
+                }
+            });
+        });
+    </script>
+</body>
+</html>
