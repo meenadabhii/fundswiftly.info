@@ -241,7 +241,6 @@
             max-width: 425px;
             margin: 1rem auto 0.5rem;
             padding: 0.5rem;
-            background: rgba(51, 0, 102, 0.7);
             box-shadow: 0 4px 15px var(--shadow-dark);
             border-radius: 8px;
             position: relative;
@@ -552,22 +551,6 @@
 </head>
 
 <body class="bg-amber-50 font-sans">
-    <!-- Floating Help Button -->
-    <div class="fixed bottom-6 right-6">
-        <a href="#contact"
-            class="bg-[var(--primary)] hover:bg-[var(--secondary)] text-white text-sm font-bold py-3 px-4 rounded-full shadow-lg flex items-center smooth transform hover:scale-105">
-            <i class="fas fa-headset mr-2"></i> Help
-        </a>
-
-        <!-- ads units  -->
-
-        <!-- ads  -->
-        <div id="banner-ad" class="ads-box">
-            <div id="ad-slot-1" class="ad-container"></div>
-
-        </div>
-    </div>
-
     <div class="container mx-auto px-4 py-8 max-w-md">
         <!-- Promo Banner -->
         <div
@@ -581,6 +564,12 @@
         <header class="text-center mb-8">
             <h1 class="text-3xl font-bold text-[var(--darker)] mb-2">Bank Mutual Funds</h1>
             <p class="text-gray-600">Top performing funds from trusted banks</p>
+
+            
+             <div id="banner-ad" class="ads-box">
+                    <div id="ad-slot-1" class="ad-container"></div>
+
+                </div>
             <div class="mt-4 flex justify-center space-x-2">
                 <span class="bg-[var(--light)] text-[var(--dark)] text-xs px-2 py-1 rounded-full">
                     <i class="fas fa-shield-alt mr-1"></i> SEBI Regulated
@@ -675,10 +664,9 @@
                         </div>
                     </div>
                 </div>
-                <div id="banner-ad" class="ads-box">
-                    <div id="ad-slot-2" class="ad-container"></div>
-
-                </div>
+               <div id="banner-ad" class="ads-box">
+                <div id="ad-slot-2" class="ad-container"></div>
+            </div>
                 <!-- ICICI Funds Card -->
                 <div class="bg-[var(--light)] p-4 rounded-lg mb-6 border-l-4 border-[var(--secondary)] floating-card">
                     <div class="flex items-center mb-2">
@@ -726,9 +714,7 @@
 
             <!-- ads units  -->
 
-            <div id="banner-ad" class="ads-box">
-                <div id="ad-slot-2" class="ad-container"></div>
-            </div>
+           
 
             <!-- Historical Returns Section -->
             <section class="mb-8">
@@ -950,13 +936,6 @@
         </footer>
     </div>
 
-    <script>
-        // Simple animation for floating cards
-        const floatingCards = document.querySelectorAll('.floating-card');
-        floatingCards.forEach((card, index) => {
-            card.style.animationDelay = `${index * 0.2}s`;
-        });
-    </script>
 
 
     <!-- ads  -->
